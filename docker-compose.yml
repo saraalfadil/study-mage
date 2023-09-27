@@ -1,0 +1,20 @@
+version: '3'
+services:
+  web:
+    image: study-mage
+    ports:
+      - "80:80"
+    volumes:
+      - .:/var/www/html
+      - ./vhost.conf:/etc/apache2/sites-available/000-default.conf
+    depends_on:
+      - mysql
+  mysql:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: secret
+      MYSQL_DATABASE: study_mage
+      MYSQL_USER: admin
+      MYSQL_PASSWORD: secret
+    ports:
+      - "3306:3306"
