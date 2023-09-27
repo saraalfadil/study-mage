@@ -6,8 +6,8 @@ Back end: Laravel 4.2/PHP 5.4/MySQL
 Front end: AngularJS + Foundation
 
 ## Setup app
-docker-compose build
-docker-compose up
+docker-compose build  
+docker-compose up  
 docker-compose exec web composer install  
 docker-compose exec web php artisan migrate   
 docker-compose exec web php artisan db:seed  
