@@ -1,0 +1,17 @@
+<div id="results">
+  <h3>Results</h3>
+  <table class="user-courses">
+    <tr>
+      <th>#</th>
+      <th>Question</th>
+      <th>Selected Answer</th>
+      <th>Actual Answer</th>
+    </tr>
+    <tr ng-repeat="result in results" ng-class="{success:result.selected==result.answer, error:result.selected!=result.answer}">
+      <td>{{$index + 1}}</td>
+      <td>{{result.question}}</td>
+      <td>{{result.selected}}</td>
+      <td>{{result.answer}}</td>
+    </tr>
+  </table>
+</div>

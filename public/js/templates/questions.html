@@ -1,0 +1,26 @@
+<div class="loader" ng-show="loading">Loading...</div>
+<div ng-show="studyMessage">There are no cards to study today. Please try again tomorrow.</div>
+
+<div ng-repeat="card in filteredCards">
+
+    <h6>Question {{currentPage}} of {{totalItems}}</h6>
+    <div class="progress">
+      <span class="meter" style="width: {{currentPage/totalItems * 100}}%"></span>
+    </div>
+
+    <div class="question">
+        <h4>{{currentPage}}. {{card.question}}</h4>
+        <input type="text" ng-model="card.selected" />
+        <p>{{card.selected}}</p>
+
+        <a ng-click="checkAnswer(card.selected)" class="button">Check Answer</a>
+        <a ng-click="viewResults()" class="button secondary right">Results</a>
+        <a ng-click="goTo(currentPage + 1)" class="button right">Next Question</a>
+    </div>
+
+    <div class="text-center" ng-show="results" style="clear:both;">
+      <div class="alert-box success" ng-show="correctAns">That is correct!</div>
+      <div class="alert-box alert" ng-show="!correctAns">Sorry, that is an incorrect answer. The correct answer is: {{card.answer}}</div>
+    </div>
+
+</div>

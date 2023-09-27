@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Study Mage</title>
+    <style>
+      body {
+        font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+        font-size: 100%;
+        background: #F4726D;
+        padding: .5em;
+      }
+
+      .wrapper {
+        width: 250px;
+      }
+
+      label {
+        color: #fff;
+        display: block;
+        margin-bottom: 5px;
+      }
+
+      h3 {
+        color: #fff;
+        margin: 0em 0em .5em 0em;
+      }
+
+      textarea {
+        background-color: #EC5752;
+        border: 0px;
+        width: 100%;
+        height: 50px;
+      }
+
+      select {
+        padding: .5em;
+        background-color: #EC5752;
+        color: #fff;
+        border: 0px;
+        width: 100%;
+      }
+
+      #submit_btn {
+        background-color: #fff;
+        color: #EC5752;
+        padding: .5em;
+        font-size: 1em;
+        border: 0px;
+      }
+
+      #message {
+        margin-bottom: .5em;
+      }
+
+    </style>
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <h3>Create a new card</h3>
+
+      <div id="message" style="display: none;"></div>
+
+      <form id="createCard">
+        <label>Select Exam</label>
+        <select id="exams" name="exams">
+          <option value="">Select Exam</option>
+        </select>
+
+        <br/><br/>
+
+        <label>Question</label>
+        <textarea name="question" id="question"></textarea>
+
+        <br/><br/>
+
+        <label>Answer</label>
+        <textarea name="answer" id="answer"></textarea>
+
+        <br/><br/>
+
+        <input type="submit" id="submit_btn" value="Submit" />
+      </form>
+    </div>
+
+    <script src="jquery.js"></script>
+    <script src="popup.js"></script>
+  </body>
+</html>
+

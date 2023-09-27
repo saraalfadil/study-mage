@@ -1,0 +1,196 @@
+body {
+	background-color: #f0f0f0;
+}
+
+* {
+	margin: 0;
+}
+
+html, body {
+	height: 100%;
+}
+
+#wrapper {
+	min-height: 100%;
+	height: auto !important; 
+	height: 100%;
+	margin: 0 auto -90px;
+}
+
+/* Navigation */
+
+.nav {
+	background-color: #333859;;
+}
+.top-bar {
+	background-color: #333859;
+	border-bottom: 1px solid #333859;
+
+	.name a {
+		font-size: 24px;
+		font-family: 'Viga', sans-serif;
+	}
+}
+
+.top-bar-section li:not(.has-form) a:not(.button) {
+  background: #333859;
+}
+
+#main {
+	float: left;
+
+	.row {
+		float: left;
+		padding-left: 15px;
+		padding-top: 20px;
+	}
+}
+
+#slideshow {
+	position: relative;
+	background-image: url(../img/books.jpg);
+	width: 100%;
+	height: 551px;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	h1 {
+		color: #fff;
+		text-align: center;
+		margin-top: 1em;
+		font-family: 'Viga', sans-serif;
+	}
+
+	h4 {
+		color: #fff;
+		text-align:center;
+	}
+}
+
+#carousel {
+	margin-top: .5em;
+}
+#carousel div {
+	text-align: center;
+	width: 200px;
+	height: 250px;
+	float: left;
+	position: relative;
+}
+#carousel div img {
+	border: none;
+}
+#carousel div span {
+	display: none;
+}
+#carousel div:hover span {
+	background-color: #333;
+	color: #fff;
+	font-family: Arial, Geneva, SunSans-Regular, sans-serif;
+	font-size: 14px;
+	line-height: 22px;
+	display: inline-block;
+	width: 100px;
+	padding: 2px 0;
+	margin: 0 0 0 -50px;
+	position: absolute;
+	bottom: 30px;
+	left: 50%;
+	border-radius: 3px;
+}
+	
+#footer, .push {
+	height: 90px;
+}	
+
+#footer {
+	clear: both;
+	background-color: #333859;
+	color: #fff;
+
+	p {
+		padding-top: 30px;
+	}
+}
+
+.register-btn {
+  background-color: #333859;
+  margin-left: 160px;
+  margin-top: 20px;
+  border-radius: 4px;
+  font-size: 21px;
+}
+
+.sub-nav { 
+
+	dd a {
+	  color: #333859;
+	  font-weight: bold;
+	}
+
+	dd.active a, .sub-nav li.active a {
+	  background: #333859;
+	}
+
+}
+
+.front {
+	float: none !important;
+}
+
+.front .course-box {
+	width: 23%;
+}
+
+.course-box {
+	width: 30%;
+	height: 270px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+	margin: .5em;
+	padding: 0px;
+	background-color: #fff;
+	border-radius: 4px;
+
+	img {
+		width: 290px;
+		height: 160px;
+	}
+
+	p {
+		margin: .5em 0em 0em 1em;
+	}
+
+	.button {
+	  float: right;
+	  background-color: #333859;
+	  width: 70px;
+	  height: 30px;
+	  font-size: 1em;
+	  border-radius: 3px;
+	  padding: 8px;
+	  right: 10px;
+	  bottom: -10px;
+	  position: absolute;
+	}
+
+	.button.secondary {
+	  background-color: #816F57;
+	  left: 70px;
+	  bottom: -10px;
+	  position: absolute;
+	  color: #fff;
+	}
+
+}
+
+.heading {
+	display: inline;
+}
+
+.alert-box {
+	margin-top: 20px;
+
+	p {
+		margin: 0px;
+	}
+}
