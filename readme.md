@@ -2,7 +2,7 @@
 
 Flashcard software that uses spaced repetition techniques. Warning - this is an old application stack using an outdated version of PHP and Laravel that is now containerized using Docker.
 
-Back end: Laravel 4.2/PHP 5.4/MySQL 
+Back end: Laravel 4.2/PHP 5.4/MySQL  
 Front end: AngularJS + Foundation
 
 ## Setup app
